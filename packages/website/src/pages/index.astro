@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import flower1 from "../assets/flower1.svg?url";
+import grass3 from "../assets/grass3.svg?url";
+---
+
+<Layout>
+  <main class="mx-auto max-w-4xl p-8 lg:py-12">
+    <div class="flex items-center gap-3">
+      <img src={flower1} class="h-12" />
+      <h1 class="text-4xl font-bold">page webring</h1>
+    </div>
+    <div class="mt-6 space-y-3 text-lg text-pretty text-neutral-600">
+      <p>
+        in autumn 2025, as the leaves fell and the air turned crisp, teens in
+        Hack Club spent 2 months designing and making their own personal
+        website, as part of the
+        <a
+          href="https://page.hackclub.com"
+          class="text-link font-semibold underline decoration-wavy [text-decoration-skip-ink:none] hover:text-teal-800"
+          >personal website ysws event</a
+        >. these sites gave an outlet for them to showcase themselves, their
+        hobbies and their interests to the world.
+      </p>
+      <p>
+        this webring is a collection of those personal websites, so people (like
+        you!!) can go explore, find new friends, and get inspiration for making
+        your own personal site.
+      </p>
+    </div>
+    <button
+      class="group border-border text-border relative isolate mt-4 h-10 border-2 bg-white px-3 font-semibold shadow-xs transition hover:text-white"
+    >
+      <span
+        class="bg-border absolute inset-0 -z-10 block origin-right transition not-group-hover:scale-x-0 group-hover:origin-left"
+      ></span>
+      enter the webring →
+    </button>
+
+    <section class="mt-10 border-t-2 border-dashed border-neutral-200 pt-6">
+      <h2 class="text-xl font-bold">join</h2>
+      <p class="mt-2 text-neutral-600">
+        made a personal website? part of hack club? dm
+        <a
+          href="https://hackclub.enterprise.slack.com/team/U09D42Q0ARJ"
+          class="mx-0.5 rounded-xs border border-cyan-200 bg-cyan-100 px-1 py-1 font-semibold text-cyan-700 transition hover:bg-cyan-200/75"
+        >
+          @gideon</a
+        >
+        to get added!
+      </p>
+      <p class="mt-2 text-neutral-600">you should include:</p>
+      <ul class="mt-1.5 list-disc space-y-1.5 pl-6 text-neutral-600">
+        <li>your preferred name or username</li>
+        <li>a link to your amazing personal website</li>
+        <li>
+          an 88x31 button! either as an image, or a link to it hosted on your
+          website
+        </li>
+      </ul>
+      <p class="mt-2 text-neutral-600">
+        don't have a button yet? make one! you can use a design tool like
+        <a
+          href="https://figma.com"
+          class="text-link font-semibold underline decoration-wavy [text-decoration-skip-ink:none] hover:text-teal-800"
+          >Figma</a
+        >, a pixel art editor like
+        <a
+          href="https://www.aseprite.org/"
+          class="text-link font-semibold underline decoration-wavy [text-decoration-skip-ink:none] hover:text-teal-800"
+          >Aseprite</a
+        >, or generate one online, for example
+        <a
+          href="https://hekate2.github.io/buttonmaker/"
+          class="text-link font-semibold underline decoration-wavy [text-decoration-skip-ink:none] hover:text-teal-800"
+          >here</a
+        >
+        or
+        <a
+          href="http://88x31.datakra.sh/"
+          class="text-link font-semibold underline decoration-wavy [text-decoration-skip-ink:none] hover:text-teal-800"
+          >here</a
+        >. make sure it's an image 88px wide and 31px tall, and remember to be
+        creative!
+      </p>
+    </section>
+
+    <section class="mt-10 border-t-2 border-dashed border-neutral-200 pt-6">
+      <p class="text-sm text-neutral-500 grayscale">
+        made with 🩶 and 💻 in hack club by heygideon. personal website ysws by
+        acon.
+      </p>
+    </section>
+  </main>
+
+  <div class="aspect-1440/68 w-full"></div>
+  <div class="fixed inset-x-0 bottom-0 bg-linear-to-t from-white via-white/80">
+    <img src={grass3} class="w-full" />
+  </div>
+</Layout>
