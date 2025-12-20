@@ -1,8 +1,7 @@
 <svelte:options customElement="pagering-overlay" />
 
 <script lang="ts">
-  import styles from "./styles.css?inline";
-  import "@fontsource-variable/archivo";
+  import styles from "./styles/index.css?inline";
 
   import {
     ArrowLeftIcon,
@@ -11,7 +10,7 @@
     ListIcon,
   } from "@lucide/svelte";
 
-  import flowers from "./assets/flowers-anim.png";
+  import { flower } from "./lib/consts";
   import { fade, fly } from "svelte/transition";
   import { cubicOut } from "svelte/easing";
   import { RING_BASE } from "./lib/consts";
@@ -107,7 +106,7 @@
               !open && "-translate-x-1 -translate-y-1",
             ]}
           >
-            <img src={flowers} alt="" class="size-5" />
+            <img src={flower} alt="" class="size-5" />
             <span class="sr-only">Hide</span>
           </button>
           <div

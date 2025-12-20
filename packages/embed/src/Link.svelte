@@ -1,10 +1,9 @@
 <svelte:options customElement="pagering-link" />
 
 <script lang="ts">
-  import styles from "./styles.css?inline";
-  import "@fontsource-variable/archivo";
+  import styles from "./styles/index.css?inline";
 
-  import flower1 from "./assets/flower1.svg";
+  import { flower } from "./lib/consts";
   import { ArrowRightIcon } from "@lucide/svelte";
   import { onMount } from "svelte";
   import { setStatus } from "./lib/api.svelte";
@@ -60,7 +59,7 @@
   onclick={handleClick}
   class="group flex items-center gap-1.5 text-sm"
 >
-  <img part="logo" src={flower1} alt="" class="h-4 min-w-4" />
+  <img part="logo" src={flower} alt="" class="size-4" />
   <span class="font-bold">page ring</span>
   <span class="text-current/50">&middot;</span>
   <span
