@@ -87,6 +87,6 @@
 
 <style>
   :host {
-    display: block;
+    display: inline-block;
   }
 </style>
