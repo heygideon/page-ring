@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 
 import vercel from "@astrojs/vercel";
+import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,5 +28,11 @@ export default defineConfig({
     shikiConfig: {
       theme: "catppuccin-latte",
     },
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        { rel: ["noopener", "nofollow"], target: "_blank" },
+      ],
+    ],
   },
 });
