@@ -44,3 +44,8 @@
   name: "p-kac"
   url: "https://pkindustry.org"
   buttonUrl: "https://pkindustry.org/images/PKIButton.png"
+
+- id: kittycat
+  name: "kittycat"
+  url: "https://lilia.rocks/"
+  buttonUrl: "https://lilia.rocks/88x31button.gif"
