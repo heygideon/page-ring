@@ -50,10 +50,35 @@
   url: "https://lilia.rocks/"
   buttonUrl: "https://lilia.rocks/88x31button.gif"
 
-- id: byjoysu
+- id: joysu
   name: "joy su"
   url: "https://byjoysu.vercel.app/"
   buttonUrl: "/buttons/byjoysu.gif"
+
+- id: kyle
+  name: "coding corner"
+  url: "https://codingcorner.dev"
+  buttonUrl: "https://codingcorner.dev/buttons/codingcorner.png"
+
+- id: foxy
+  name: "foxy"
+  url: "https://page.wiffles.xyz"
+  buttonUrl: "https://page.wiffles.xyz/button.gif"
+
+- id: n0o0b090lv
+  name: "n0o0b090lv"
+  url: "https://noob-dev.fyi/"
+  buttonUrl: "https://noob-dev.fyi/assets/88x31/noob88x31.gif"
+
+- id: eshan
+  name: "eshan does"
+  url: "https://eshandoes.vercel.app/"
+  buttonUrl: "https://eshandoes.vercel.app/88x31buttons/personal.png"
+
+- id: maverick
+  name: "maverick"
+  url: "https://maverickkamal.com/"
+  buttonUrl: "https://maverickkamal.com/button.gif"
 
 - id: miniaturity
   name: "miniaturity"
