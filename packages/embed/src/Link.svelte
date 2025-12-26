@@ -63,7 +63,7 @@
 <button
   part="link"
   onclick={handleClick}
-  class="group flex items-center gap-1.5 text-sm tracking-normal"
+  class="group flex items-center gap-1.5 font-sans text-sm tracking-normal"
 >
   <img part="logo" src={flower} alt="" class="size-4" />
   <span class="font-bold">page ring</span>

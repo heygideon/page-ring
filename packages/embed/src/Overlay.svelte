@@ -75,7 +75,7 @@
     <div
       transition:fly|global={{ duration: 300, easing: cubicOut, x: -4 }}
       class={[
-        "border-border fixed top-6 left-6 border-2 bg-white text-base tracking-normal text-black shadow-lg transition duration-300 ease-in-out",
+        "border-border fixed top-6 left-6 border-2 bg-white font-sans text-base tracking-normal text-black shadow-lg transition duration-300 ease-in-out",
         !open && "-translate-x-2 -translate-y-2",
       ]}
     >
