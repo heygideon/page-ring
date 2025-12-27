@@ -210,7 +210,6 @@
               <div class="mt-1.5 flex gap-3">
                 <a
                   href={RING_BASE}
-                  target="_blank"
                   class="text-link font-semibold transition hover:text-teal-900 hover:underline"
                 >
                   read more
