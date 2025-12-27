@@ -99,3 +99,8 @@
   name: "sarvesh"
   url: https://sarvesh.rocks/
   buttonUrl: "https://sarvesh.rocks/assets/sarvesh-button.gif"
+
+- id: waves
+  name: "Dwait Pandhi"
+  url: "https://dwaitweb.vercel.app/"
+  buttonUrl: "https://dwaitweb.vercel.app/button.jpg"
