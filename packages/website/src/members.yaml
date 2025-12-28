@@ -104,3 +104,8 @@
   name: "udu"
   url: https://udu3324.org
   buttonUrl: "https://udu3324.org/88x31.gif"
+
+- id: gamerwaves
+  name: "dwait pandhi"
+  url: "https://dwaitweb.vercel.app/"
+  buttonUrl: "https://dwaitweb.vercel.app/button.jpg"
