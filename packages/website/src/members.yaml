@@ -75,6 +75,11 @@
   url: "https://eshandoes.com/"
   buttonUrl: "https://eshandoes.com/88x31buttons/personal.png"
 
+- id: acash
+  name: "aakash"
+  url: "https://acashsite.vercel.app/"
+  buttonUrl: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/65adbc4ef9c268d6_button.png"
+
 - id: maverick
   name: "maverick"
   url: "https://maverickkamal.com/"
