@@ -233,6 +233,6 @@
   :host {
     user-select: none;
     position: relative;
-    z-index: calc(infinity);
+    z-index: calc(infinity) !important;
   }
 </style>
