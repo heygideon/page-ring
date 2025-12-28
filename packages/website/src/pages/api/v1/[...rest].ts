@@ -113,6 +113,8 @@ app.post(
     } else {
       deleteCookie(c, "webring-enabled", {
         path: "/",
+        sameSite: "None",
+        secure: true,
       });
     }
     return c.json({ success: true });
