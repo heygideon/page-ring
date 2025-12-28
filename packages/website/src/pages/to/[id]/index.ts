@@ -1,11 +1,11 @@
 import type { APIContext } from "astro";
 import { getAllMembers, getCurrentMember } from "~/lib/webring";
 
-export async function GET({ params, url, cookies }: APIContext) {
+export async function GET({ params, url, cookies, redirect }: APIContext) {
   const members = await getAllMembers({ url });
   const member = getCurrentMember(members, params.id!);
   if (!member) {
-    return Response.redirect(new URL("/", url));
+    return redirect("/");
   }
 
   cookies.set("webring-enabled", "true", {
@@ -15,5 +15,5 @@ export async function GET({ params, url, cookies }: APIContext) {
     secure: true,
   });
 
-  return Response.redirect(member.url);
+  return redirect(member.url);
 }

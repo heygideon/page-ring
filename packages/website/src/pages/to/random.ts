@@ -1,9 +1,9 @@
 import type { APIContext } from "astro";
 import { getAllMembers } from "~/lib/webring";
 
-export async function GET({ url }: APIContext) {
+export async function GET({ url, redirect }: APIContext) {
   const members = await getAllMembers({ url });
   const randomMember = members[Math.floor(Math.random() * members.length)];
 
-  return Response.redirect(new URL(`/to/${randomMember.id}`, url));
+  return redirect(`/to/${randomMember.id}`);
 }
