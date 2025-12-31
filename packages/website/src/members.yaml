@@ -107,8 +107,8 @@
 
 - id: gamerwaves
   name: "dwait pandhi"
-  url: "https://dwaitweb.vercel.app/"
-  buttonUrl: "https://dwaitweb.vercel.app/button.jpg"
+  url: "https://dwait.dev/"
+  buttonUrl: "https://dwait.dev/button.jpg"
 
 - id: acash
   name: "aakash"
