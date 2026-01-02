@@ -134,3 +134,8 @@
   name: "froppii"
   url: "https://froppii.dev"
   buttonUrl: "https://froppii.dev/button.gif"
+
+- id: angel
+  name: "angel"
+  url: "https://angle-mad.github.io/personal-website/index.html"
+  buttonUrl: "https://angle-mad.github.io/personal-website/Angel-button.png"
