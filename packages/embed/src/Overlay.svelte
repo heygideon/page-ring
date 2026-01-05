@@ -15,7 +15,7 @@
   import { cubicOut } from "svelte/easing";
   import { RING_BASE } from "./lib/consts";
   import { onMount } from "svelte";
-  import { getEmbed, getStatus, setStatus } from "./lib/api";
+  import { getEmbedCached, getStatus, setStatus } from "./lib/api";
   import Arrow from "./lib/Arrow.svelte";
 
   // https://stackoverflow.com/a/79718503/22946386
@@ -44,6 +44,7 @@
         open = true;
         enabled = true;
       }
+      setStatus({ enabled: true });
     };
 
     window.addEventListener("pagering:enable", enableHandler);
@@ -61,7 +62,7 @@
   }
 </script>
 
-{#await getEmbed() then embed}
+{#await getEmbedCached() then embed}
   {#if embed && enabled}
     {#if open && showDirectory}
       <div
@@ -102,6 +103,7 @@
                   open = !open;
                 }
               }}
+              title={open ? "hide" : "show"}
               class={[
                 "group grid size-8 origin-top-left place-items-center transition hover:bg-neutral-200",
                 !open && "-translate-x-1 -translate-y-1",
@@ -117,30 +119,31 @@
               ]}
             >
               <a
-                href={embed.prev.url}
+                href={embed.prev.redirectUrl}
+                title={`prev: ${embed.prev.name}`}
                 class="group grid size-8 place-items-center transition hover:bg-neutral-200"
               >
                 <ArrowLeftIcon
                   strokeWidth={2.5}
                   class="size-4 transition not-group-hover:text-neutral-600"
                 />
-                <span class="sr-only">Previous website</span>
               </a>
               <p class="min-w-0 flex-1 text-center">
                 <strong>page</strong> by Hack Club
               </p>
               <a
-                href={embed.next.url}
+                href={embed.next.redirectUrl}
+                title={`next: ${embed.next.name}`}
                 class="group grid size-8 place-items-center transition hover:bg-neutral-200"
               >
                 <ArrowRightIcon
                   strokeWidth={2.5}
                   class="size-4 transition not-group-hover:text-neutral-600"
                 />
-                <span class="sr-only">Next website</span>
               </a>
               <button
                 onclick={() => (showDirectory = !showDirectory)}
+                title={showDirectory ? "hide directory" : "show directory"}
                 class="group grid size-8 place-items-center transition hover:bg-neutral-200"
               >
                 <ListIcon
@@ -171,7 +174,7 @@
             <div class="group">
               {#each embed.members as member (member.id)}
                 <a
-                  href={member.url}
+                  href={member.redirectUrl}
                   aria-disabled={embed.current?.id === member.id}
                   class="ring-link flex items-center gap-2 p-1.5 shadow-none transition group-has-hover:not-hover:opacity-75 hover:bg-teal-100 hover:ring-1 aria-disabled:pointer-events-none"
                 >

@@ -4,8 +4,9 @@
   import styles from "./styles/index.css?inline";
 
   import { flower } from "./lib/consts";
-  import { ArrowRightIcon } from "@lucide/svelte";
+  import { ArrowLeftIcon, ArrowRightIcon } from "@lucide/svelte";
   import { onMount } from "svelte";
+  import { getEmbedCached } from "./lib/api";
 
   // https://stackoverflow.com/a/79718503/22946386
   const container = $host();
@@ -58,36 +59,56 @@
   }
 </script>
 
-<button
-  part="link"
-  onclick={handleClick}
-  class="group flex items-center gap-1.5 font-sans text-sm tracking-normal"
->
-  <img part="logo" src={flower} alt="" class="size-4" />
-  <span class="font-bold">page ring</span>
-  <span class="text-current/50">&middot;</span>
-  <span
-    part="link-text"
-    class={[
-      "flex items-center gap-1 transition",
-      lightDark(
-        "text-link group-hover:text-teal-800",
-        "text-teal-400 group-hover:text-teal-300",
-      ),
-    ]}
-  >
-    <span
+{#await getEmbedCached() then embed}
+  <div class={["flex", lightDark("text-black", "text-white")]}>
+    <a
+      href={embed.prev.redirectUrl}
+      title={`prev: ${embed.prev.name}`}
       class={[
-        "underline underline-offset-2 [text-decoration-skip-ink:none] group-hover:decoration-wavy",
-        lightDark("font-semibold", "font-medium"),
-      ]}>enter the webring</span
+        "grid size-7 place-items-center transition hover:ring-1",
+        lightDark(
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
+        ),
+      ]}
     >
-    <ArrowRightIcon
-      strokeWidth={2.5}
-      class="size-3 transition-transform group-hover:translate-x-px"
-    />
-  </span>
-</button>
+      <ArrowLeftIcon
+        strokeWidth={2.5}
+        class="size-4 transition-transform group-hover:translate-x-px"
+      />
+    </a>
+    <button
+      onclick={handleClick}
+      title="enter webring"
+      class={[
+        "group flex h-7 items-center gap-1.5 px-2 font-sans text-sm tracking-normal transition hover:ring-1",
+        lightDark(
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
+        ),
+      ]}
+    >
+      <img src={flower} alt="" class="size-5" />
+      <span class="font-bold">page ring</span>
+    </button>
+    <a
+      href={embed.next.redirectUrl}
+      title={`next: ${embed.next.name}`}
+      class={[
+        "grid size-7 place-items-center transition hover:ring-1",
+        lightDark(
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
+        ),
+      ]}
+    >
+      <ArrowRightIcon
+        strokeWidth={2.5}
+        class="size-4 transition-transform group-hover:translate-x-px"
+      />
+    </a>
+  </div>
+{/await}
 
 <style>
   :host {
