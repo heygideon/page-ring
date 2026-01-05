@@ -4,7 +4,7 @@
   import styles from "./styles/index.css?inline";
 
   import { flower } from "./lib/consts";
-  import { ArrowRightIcon } from "@lucide/svelte";
+  import { ArrowLeftIcon, ArrowRightIcon } from "@lucide/svelte";
   import { onMount } from "svelte";
 
   // https://stackoverflow.com/a/79718503/22946386
@@ -58,36 +58,50 @@
   }
 </script>
 
-<button
-  part="link"
-  onclick={handleClick}
-  class="group flex items-center gap-1.5 font-sans text-sm tracking-normal"
->
-  <img part="logo" src={flower} alt="" class="size-4" />
-  <span class="font-bold">page ring</span>
-  <span class="text-current/50">&middot;</span>
-  <span
-    part="link-text"
+<div class="flex">
+  <button
     class={[
-      "flex items-center gap-1 transition",
+      "grid size-7 place-items-center transition hover:ring-1",
       lightDark(
-        "text-link group-hover:text-teal-800",
-        "text-teal-400 group-hover:text-teal-300",
+        "text-black ring-black/20 hover:bg-black/5",
+        "text-white ring-white/20 hover:bg-white/10",
       ),
     ]}
   >
-    <span
-      class={[
-        "underline underline-offset-2 [text-decoration-skip-ink:none] group-hover:decoration-wavy",
-        lightDark("font-semibold", "font-medium"),
-      ]}>enter the webring</span
-    >
+    <ArrowLeftIcon
+      strokeWidth={2.5}
+      class="size-4 transition-transform group-hover:translate-x-px"
+    />
+  </button>
+  <button
+    part="link"
+    onclick={handleClick}
+    class={[
+      "group flex h-7 items-center gap-1.5 px-2 font-sans text-sm tracking-normal transition hover:ring-1",
+      lightDark(
+        "text-black ring-black/20 hover:bg-black/5",
+        "text-white ring-white/20 hover:bg-white/10",
+      ),
+    ]}
+  >
+    <img part="logo" src={flower} alt="" class="size-5" />
+    <span class="font-bold">page ring</span>
+  </button>
+  <button
+    class={[
+      "grid size-7 place-items-center transition hover:ring-1",
+      lightDark(
+        "text-black ring-black/20 hover:bg-black/5",
+        "text-white ring-white/20 hover:bg-white/10",
+      ),
+    ]}
+  >
     <ArrowRightIcon
       strokeWidth={2.5}
-      class="size-3 transition-transform group-hover:translate-x-px"
+      class="size-4 transition-transform group-hover:translate-x-px"
     />
-  </span>
-</button>
+  </button>
+</div>
 
 <style>
   :host {

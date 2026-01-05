@@ -44,6 +44,7 @@
         open = true;
         enabled = true;
       }
+      setStatus({ enabled: true });
     };
 
     window.addEventListener("pagering:enable", enableHandler);

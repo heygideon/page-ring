@@ -1,5 +1,5 @@
 import "./Overlay.svelte";
-import "./Link.svelte";
+import "./Link_v2.svelte";
 
 import styles from "./styles/fonts.css?url";
 
