@@ -60,13 +60,14 @@
 </script>
 
 {#await getEmbedCached() then embed}
-  <div class="flex">
-    <button
+  <div class={["flex", lightDark("text-black", "text-white")]}>
+    <a
+      href={embed.prev.url}
       class={[
         "grid size-7 place-items-center transition hover:ring-1",
         lightDark(
-          "text-black ring-black/20 hover:bg-black/5",
-          "text-white ring-white/20 hover:bg-white/10",
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
         ),
       ]}
     >
@@ -74,27 +75,27 @@
         strokeWidth={2.5}
         class="size-4 transition-transform group-hover:translate-x-px"
       />
-    </button>
+    </a>
     <button
-      part="link"
       onclick={handleClick}
       class={[
         "group flex h-7 items-center gap-1.5 px-2 font-sans text-sm tracking-normal transition hover:ring-1",
         lightDark(
-          "text-black ring-black/20 hover:bg-black/5",
-          "text-white ring-white/20 hover:bg-white/10",
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
         ),
       ]}
     >
-      <img part="logo" src={flower} alt="" class="size-5" />
+      <img src={flower} alt="" class="size-5" />
       <span class="font-bold">page ring</span>
     </button>
-    <button
+    <a
+      href={embed.next.url}
       class={[
         "grid size-7 place-items-center transition hover:ring-1",
         lightDark(
-          "text-black ring-black/20 hover:bg-black/5",
-          "text-white ring-white/20 hover:bg-white/10",
+          "ring-black/20 hover:bg-black/5",
+          "ring-white/20 hover:bg-white/10",
         ),
       ]}
     >
@@ -102,7 +103,7 @@
         strokeWidth={2.5}
         class="size-4 transition-transform group-hover:translate-x-px"
       />
-    </button>
+    </a>
   </div>
 {/await}
 
