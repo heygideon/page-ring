@@ -148,3 +148,8 @@
   name: "mart"
   url: "https://m4rt.nl"
   buttonUrl: /buttons/mart.png
+
+- id: srsxnsh
+  name: "srsxnsh"
+  url: "https://srsxnsh.xyz"
+  buttonUrl: "https://srsxnsh.xyz/badges/srsxnsh.gif"
