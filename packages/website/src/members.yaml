@@ -153,3 +153,8 @@
   name: "srsxnsh"
   url: "https://srsxnsh.xyz"
   buttonUrl: "https://srsxnsh.xyz/badges/srsxnsh.gif"
+
+- id: hex4
+  name: "hex4"
+  url: "https://hex4.xyz"
+  buttonUrl: "https://hex4.xyz/88x31/hex4.gif"
