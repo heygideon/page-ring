@@ -163,3 +163,8 @@
   name: "ingo"
   url: "https://ingo.au"
   buttonUrl: "https://ingo.au/buttons/ingo.png"
+
+- id: mahad
+  name: "mahad"
+  url: "https://mahadk.com"
+  buttonUrl: /buttons/mahad.png
