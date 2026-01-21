@@ -158,3 +158,8 @@
   name: "hex4"
   url: "https://hex4.xyz"
   buttonUrl: "https://hex4.xyz/88x31/hex4.gif"
+
+- id: ingo
+  name: "ingo"
+  url: "https://ingo.au"
+  buttonUrl: "https://ingo.au/buttons/ingo.png"
