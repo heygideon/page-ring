@@ -50,13 +50,6 @@
         return systemTheme === "dark" ? dark : light;
     }
   };
-
-  function handleClick() {
-    console.debug("[pagering] event 'pagering:enable' dispatched");
-    window.dispatchEvent(
-      new CustomEvent("pagering:enable", { bubbles: true, composed: true }),
-    );
-  }
 </script>
 
 <div class={["flex min-h-7", lightDark("text-black", "text-white")]}>
@@ -78,7 +71,7 @@
       />
     </a>
     <button
-      onclick={handleClick}
+      onclick={() => window.pagering.open()}
       title="enter webring"
       class={[
         "group flex h-7 items-center gap-1.5 px-2 font-sans text-sm tracking-normal transition hover:ring-1",
