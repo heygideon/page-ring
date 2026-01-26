@@ -168,3 +168,8 @@
   name: "mahad"
   url: "https://mahadk.com"
   buttonUrl: /buttons/mahad.png
+
+- id: iris
+  name: "iris"
+  url: "https://gotlobotomy.tech"
+  buttonUrl: "https://gotlobotomy.tech/images/irisbutton.png"
