@@ -1,5 +1,12 @@
 import { joinURL } from "ufo";
 
+export const ALWAYS_SHOW_ON = [
+  "page-ring.vercel.app",
+  "pagering.gideon.sh",
+  "pagering.hackclub.com",
+  !import.meta.env.PROD ? "localhost" : "",
+];
+
 export const RING_BASE = import.meta.env.PROD
   ? "https://pagering.gideon.sh/"
   : "http://localhost:4321/";

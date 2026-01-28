@@ -1,5 +1,5 @@
 import { joinURL } from "ufo";
-import { API_BASE } from "./consts";
+import { ALWAYS_SHOW_ON, API_BASE } from "./consts";
 import { cache } from "./cache";
 
 export interface Member {
@@ -41,7 +41,7 @@ export async function getEmbed() {
 export const getEmbedCached = cache("embed", getEmbed);
 
 export async function getStatus() {
-  if (location.host === new URL(API_BASE).host) {
+  if (ALWAYS_SHOW_ON.includes(location.hostname)) {
     return { enabled: true };
   }
 
