@@ -173,3 +173,8 @@
   name: "iris"
   url: "https://gotlobotomy.tech"
   buttonUrl: "https://gotlobotomy.tech/images/irisbutton.png"
+
+- id: deltea
+  name: "deltea"
+  url: "https://deltea.space"
+  buttonUrl: "https://deltea.space/antipixel/deltea-space.gif"
