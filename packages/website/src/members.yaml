@@ -171,8 +171,8 @@
 
 - id: iris
   name: "iris"
-  url: "https://gotlobotomy.tech"
-  buttonUrl: "https://gotlobotomy.tech/images/irisbutton.png"
+  url: "https://irispond.net"
+  buttonUrl: "https://irispond.net/images/irisbutton.png"
 
 - id: deltea
   name: "deltea"
