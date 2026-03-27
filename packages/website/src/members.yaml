@@ -183,3 +183,8 @@
   name: "hexaa"
   url: "https://hexaa.sh"
   buttonUrl: "https://hexaa.sh/88x31.gif"
+
+- id: consciousbone
+  name: "consciousbone"
+  url: "https://consciousb.one"
+  buttonUrl: "https://consciousb.one/assets/88x31/cbone.png"
