@@ -56,7 +56,7 @@
   buttonUrl: "/buttons/byjoysu.gif"
 
 - id: kyle
-  name: "coding corner"
+  name: "kyle"
   url: "https://codingcorner.dev"
   buttonUrl: "https://codingcorner.dev/buttons/codingcorner.png"
 
@@ -157,7 +157,7 @@
 - id: hex4
   name: "hex4"
   url: "https://hex4.xyz"
-  buttonUrl: "https://hex4.xyz/88x31/hex4.gif"
+  buttonUrl: "https://hex4.xyz/88x31/88x31.gif"
 
 - id: ingo
   name: "ingo"
