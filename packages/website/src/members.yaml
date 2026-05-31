@@ -188,3 +188,8 @@
   name: "consciousbone"
   url: "https://consciousb.one"
   buttonUrl: "https://consciousb.one/assets/88x31/cbone.png"
+
+- id: silas
+  name: "silas"
+  url: "https://sbunger.tech"
+  buttonUrl: /buttons/silas.png
