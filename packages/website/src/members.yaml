@@ -193,3 +193,8 @@
   name: "silas"
   url: "https://sbunger.tech"
   buttonUrl: /buttons/silas.png
+
+- id: freddie
+  name: "freddie"
+  url: "https://freddieyershon.co.uk"
+  buttonUrl: "https://freddieyershon.co.uk/assets/buttons/freddie-v3.png"
