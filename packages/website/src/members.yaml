@@ -199,6 +199,11 @@
   url: "https://freddieyershon.co.uk"
   buttonUrl: "https://freddieyershon.co.uk/assets/buttons/freddie-v3.png"
 
+- id: glutesha
+  name: "glutesha"
+  url: "https://glutesha.me"
+  buttonUrl: "https://glutesha.me/badges/interactive/glutesha.png"
+
 - id: alex
   name: "alex"
   url: "https://alexanderisashy.one"
