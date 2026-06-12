@@ -198,3 +198,8 @@
   name: "freddie"
   url: "https://freddieyershon.co.uk"
   buttonUrl: "https://freddieyershon.co.uk/assets/buttons/freddie-v3.png"
+
+- id: alex
+  name: "alex"
+  url: "https://alexanderisashy.one"
+  buttonUrl: /buttons/alex.gif
