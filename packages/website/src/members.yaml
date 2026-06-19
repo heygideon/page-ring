@@ -208,3 +208,8 @@
   name: "alex"
   url: "https://alexanderisashy.one"
   buttonUrl: /buttons/alex.gif
+
+- id: areg
+  name: "areg"
+  url: "https://aregus.me"
+  buttonUrl: /buttons/areg.png
