@@ -10,10 +10,10 @@
   url: "https://inkedpetal.dev"
   buttonUrl: "https://inkedpetal.dev/88x31/inkedpetal.gif"
 
-- id: ivie
-  name: "ivie"
-  url: "https://ivie.codes"
-  buttonUrl: "https://ivie.codes/buttons/88x31.png"
+# - id: ivie
+#   name: "ivie"
+#   url: "https://ivie.codes"
+#   buttonUrl: "https://ivie.codes/buttons/88x31.png"
 
 - id: valen
   name: "valen"
@@ -32,7 +32,7 @@
 
 - id: bunnyguy
   name: "bunnyguy"
-  url: "https://sundial.city"
+  url: "https://snipchu.neocities.org"
   buttonUrl: /buttons/bunnyguy.gif
 
 - id: dipa
@@ -110,10 +110,10 @@
   url: "https://dwait.dev/"
   buttonUrl: "https://dwait.dev/button.jpg"
 
-- id: acash
-  name: "aakash"
-  url: "https://acashsite.vercel.app/"
-  buttonUrl: /buttons/acash.gif
+# - id: acash
+#   name: "aakash"
+#   url: "https://acashsite.vercel.app/"
+#   buttonUrl: /buttons/acash.gif
 
 - id: gabibrawl
   name: "gabibrawl"
@@ -139,10 +139,10 @@
 #   url: "https://angle-mad.github.io/personal-website/index.html"
 #   buttonUrl: "https://angle-mad.github.io/personal-website/Angel-button.png"
 
-- id: bomberfish
-  name: "bomberfish"
-  url: "https://bomberfish.ca"
-  buttonUrl: "https://bomberfish.ca/button.gif"
+# - id: bomberfish
+#   name: "bomberfish"
+#   url: "https://bomberfish.ca"
+#   buttonUrl: "https://bomberfish.ca/button.gif"
 
 - id: mart
   name: "mart"
@@ -164,10 +164,10 @@
   url: "https://ingo.au"
   buttonUrl: "https://ingo.au/buttons/ingo.png"
 
-- id: mahad
-  name: "mahad"
-  url: "https://mahadk.com"
-  buttonUrl: /buttons/mahad.png
+# - id: mahad
+#   name: "mahad"
+#   url: "https://mahadk.com"
+#   buttonUrl: /buttons/mahad.png
 
 - id: iris
   name: "iris"
