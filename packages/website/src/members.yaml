@@ -253,3 +253,8 @@
   name: "celsius"
   url: "https://sunray-hub.github.io/the-site-of-celsius"
   buttonUrl: "https://sunray-hub.github.io/the-site-of-celsius/button.gif"
+
+- id: numycode
+  name: "numycode"
+  url: "https://numycode.dev"
+  buttonUrl: "https://numycode.dev/images/numycode-button.png"
